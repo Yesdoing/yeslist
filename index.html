@@ -12,6 +12,61 @@
 </head>
 
 <body>
+    <div class="page">
+        <aside class="tasklist">
+            <header class="tasklist__header">
+                <button class="tasklist__button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="search-bar">
+                    <input class="search-bar__input" type="text">
+                    <button class="search-bar__icon">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="tasklist__contents">
+                <div class="tasklist__user">
+                    <div class="user-info">
+                        <img src="images/yesdoing.png" alt="">
+                        <span>
+                            이장희
+                            <i class="fas fa-caret-down"></i>
+                        </span>
+                    </div>
+                    <div class="user-notifications">
+                        <button class="user-notification--active">
+                            <i class="far fa-bell"></i>
+                        </button>
+                        <button class="user-notification--talk">
+                            <i class="far fa-comment"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tasklist-content">
+                    <ul class="tasklist-items">
+                        <li class="tasklist-item">
+                            <span class="item-name">
+                                <i class="far fa-envelope-open"></i>
+                                수신함
+                            </span>
+                            <span>
+                                2
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="tasklist-additem">
+                        <i class="fas fa-plus"></i>
+                        목록작성
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+
+    </div>
 
     <script src="js/app.js"></script>
 </body>

@@ -65,7 +65,66 @@
             </div>
         </aside>
 
+        <main class="todolist">
+            <header class="todolist__header">
+                <span class="todolist-taskname">
+                    수신함
+                </span>
+                <div class="todolist__header-icons">
+                    <button class="todolist__header-icon">
+                        <i class="fas fa-plus"></i>
+                        <span>공유</span>
+                    </button>
+                    <button class="todolist__header-icon">
+                        <i class="fas fa-sort-alpha-down"></i>
+                        <span>정렬</span>
+                    </button>
+                    <button class="todolist__header-icon">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span>더보기</span>
+                    </button>
+                </div>
+            </header>
 
+            <div class="todolist-additem">
+                <input type="text" class="additem__input">
+                <i class="fas fa-plus"></i>
+                <!--
+                <i class="fas fa-microphone"></i>
+                <i class="far fa-calendar"></i>
+                <i class="far fa-star"></i>
+                -->
+            </div>
+
+            <div class="todolist-list">
+                <ul class="todolist-items">
+                    <li class="todolist-item">
+                        <div class="todolist-item-info">
+                            <button class="todolist-item-check">
+                            </button>
+                            <span class="todolist-item-todoname">
+                                분더리스트 클론코딩
+                            </span>
+                        </div>
+                        <button class="todolist-item-star">
+                            <i class="far fa-star"></i>
+                        </button>
+                    </li>
+                    <li class="todolist-item">
+                        <div class="todolist-item-info">
+                            <button class="todolist-item-check">
+                            </button>
+                            <span class="todolist-item-todoname">
+                                2번 할일
+                            </span>
+                        </div>
+                        <button class="todolist-item-star">
+                            <i class="far fa-star"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </main>
     </div>
 
     <script src="js/app.js"></script>

@@ -74,6 +74,7 @@
   border: none;
   font-size: 17px;
   color: white;
+  outline: none;
 }
 
 .todolist .todolist-additem i {

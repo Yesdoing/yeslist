@@ -1,0 +1,90 @@
+.tasklist {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 780px;
+}
+
+.tasklist .tasklist__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #5b795a;
+}
+
+.tasklist .tasklist__header a {
+  font-size: 18px;
+  color: white;
+}
+
+.tasklist__contents .tasklist__user {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 13px 10px 5px;
+  align-items: center;
+}
+
+.tasklist__contents .tasklist__user .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.tasklist__contents .tasklist__user .user-info span {
+  font-size: 15px;
+}
+
+.tasklist__contents .tasklist__user .user-info span i {
+  margin-left: 5px;
+}
+
+.tasklist__contents .tasklist__user .user-info img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tasklist__contents .tasklist__user .user-notifications a {
+  color: #737272;
+}
+
+.tasklist__contents .tasklist__user .user-notifications a:first-child {
+  padding-right: 20px;
+}
+
+.tasklist__contents .tasklist__content {
+  height: 665px;
+}
+
+.tasklist-content .tasklist-items .tasklist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 13px;
+  background-color: #e1eefa;
+}
+
+.tasklist-content .tasklist-items .tasklist-item .item-name i {
+  padding-right: 6px;
+  color: #328fe9;
+}
+
+.tasklist-content .tasklist-items .tasklist-item span:last-child {
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+.tasklist__contents .tasklist-additem {
+  position: fixed;
+  top: 95%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 10px 10px;
+}
+
+.tasklist__contents .tasklist-additem a {
+  color: #388bd4;
+}
+
+.tasklist__contents .tasklist-additem a i {
+  margin-right: 13px;
+}

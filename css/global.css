@@ -1,5 +1,6 @@
 .page {
   display: flex;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 a {

@@ -8,8 +8,31 @@
 .tasklist .tasklist__header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
+  height: 45px;
   background-color: #5b795a;
+}
+
+.tasklist .tasklist__header a {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.tasklist .tasklist__header .search-bar .search-bar__input {
+  background-color: #5b795a;
+  border: none;
+  height: 43px;
+  width: 210px;
+  color: white;
+  font-size: 18px;
+}
+
+.tasklist .tasklist__header .search-bar input:focus {
+  outline: none;
+}
+
+.tasklist .tasklist__header .search-bar .search-bar__icon {
+  position: relative;
+  right: 15px;
 }
 
 .tasklist .tasklist__header a {

@@ -1,0 +1,123 @@
+.todolist {
+  background-image: url("https://ssl.tzoo-img.com/images/tzoo.hd.94770.1844.596424.JamesNewYork.jpg?v=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1156px;
+  height: 810px;
+}
+
+.todolist .todolist__header {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  background-color: #678865;
+  align-items: center;
+}
+
+.todolist .todolist__header .todolist__header-icons {
+  display: flex;
+}
+
+.todolist .todolist__header .todolist__header-icons .todolist__header-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.todolist .todolist__header .todolist__header-icons span {
+  padding-top: 5px;
+  font-size: 11px;
+}
+
+.todolist
+  .todolist__header
+  .todolist__header-icons
+  .todolist__header-icon--disabled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  color: #b3c3b2;
+  pointer-events: none;
+}
+
+.todolist .todolist__header .todolist-taskname {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.todolist .todolist-additem {
+  display: flex;
+  align-items: center;
+  width: 97.5%;
+  height: 48px;
+  background-color: #809675;
+  border-radius: 5px;
+  margin: 15px 15px;
+}
+
+.todolist .todolist-additem input::placeholder {
+  color: #c7d3c7;
+}
+
+.todolist .todolist-additem .additem__input {
+  width: 85%;
+  height: 20px;
+  background-color: #809675;
+  border: none;
+  font-size: 17px;
+  color: white;
+}
+
+.todolist .todolist-additem i {
+  padding: 10px 15px;
+  color: #e3e8e3;
+  font-size: 20px;
+}
+
+.todolist .todolist-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todolist .todolist-list .todolist-items .todolist-item {
+  display: flex;
+  width: 97.5%;
+  height: 48px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 2px 15px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.todolist .todolist-list .todolist-items .todolist-item i {
+  color: #a6a6a6;
+}
+
+.todolist .todolist-list .todolist-items .todolist-item .todolist-item-info a {
+  margin-right: 5px;
+}
+
+.todolist .todolist-list .todolist-show-checked {
+  width: 114px;
+  height: 20px;
+  color: white;
+  font-size: 11px;
+  background-color: #7b9778;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 18px;
+  margin-left: 15px;
+}

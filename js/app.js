@@ -1,5 +1,7 @@
 import ToDo from "./ToDo";
 
+document.addEventListener("DOMContentLoaded", function(e) {});
+
 function intialize() {
   let todos = [];
 

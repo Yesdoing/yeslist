@@ -51,12 +51,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
     li.appendChild(aStar);
     aInfo.addEventListener("click", function(e) {
       const parentList = e.target.parentNode.parentNode.parentNode;
-      if (parentList.className === "todolist-item") {
-        parentList.className = "todolist-item--checked";
-        e.target.className = "far fa-check-square";
-      } else {
-        parentList.className = "todolist-item";
-        e.target.className = "far fa-square";
+      if (parentList.nodeName === "LI") {
+        if (parentList.className === "todolist-item") {
+          parentList.className = "todolist-item--checked";
+          e.target.className = "far fa-check-square";
+        } else {
+          parentList.className = "todolist-item";
+          e.target.className = "far fa-square";
+        }
       }
     });
     ul.insertBefore(li, ul.childNodes[0]);

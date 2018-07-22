@@ -1,7 +1,8 @@
-import { ToDo } from "./ToDo.js";
+//import { ToDo } from "./ToDo.js";
 
 document.addEventListener("DOMContentLoaded", function(e) {
   const itemInput = document.querySelector(".additem__input");
+
   let todos = [];
 
   itemInput.addEventListener("keyup", e => {
@@ -48,45 +49,16 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
     li.appendChild(div);
     li.appendChild(aStar);
-
+    aInfo.addEventListener("click", function(e) {
+      const parentList = e.target.parentNode.parentNode.parentNode;
+      if (parentList.className === "todolist-item") {
+        parentList.className = "todolist-item--checked";
+        e.target.className = "far fa-check-square";
+      } else {
+        parentList.className = "todolist-item";
+        e.target.className = "far fa-square";
+      }
+    });
     ul.insertBefore(li, ul.childNodes[0]);
-  }
-
-  class ToDo {
-    constructor(todo, startDate, endDate, checked) {
-      Object.assign(this, { todo, startDate, endDate, checked });
-    }
-
-    get todo() {
-      return this._todo;
-    }
-
-    set todo(value) {
-      this._todo = value;
-    }
-
-    get startDate() {
-      return this._startDate;
-    }
-
-    set startDate(value) {
-      this._startDAte = value;
-    }
-
-    get endDate() {
-      return this._endDate;
-    }
-
-    set endDate(value) {
-      this._endDate = value;
-    }
-
-    get checked() {
-      return this._checked;
-    }
-
-    set checked(value) {
-      this._checked = value;
-    }
   }
 });

@@ -1,4 +1,4 @@
-export default class ToDo {
+class ToDo {
   constructor(todo, startDate, endDate, checked) {
     Object.assign(this, { todo, startDate, endDate, checked });
   }

@@ -102,11 +102,18 @@
   font-size: 15px;
 }
 
-.todolist .todolist-list .todolist-items .todolist-item i {
+.todolist .todolist-list .todolist-items .todolist-item i,
+.todolist .todolist-list .todolist-items .todolist-item--checked i {
   color: #a6a6a6;
 }
 
-.todolist .todolist-list .todolist-items .todolist-item .todolist-item-info a {
+.todolist .todolist-list .todolist-items .todolist-item .todolist-item-info a,
+.todolist
+  .todolist-list
+  .todolist-items
+  .todolist-item--checked
+  .todolist-item-info
+  a {
   margin-right: 5px;
 }
 
@@ -121,4 +128,19 @@
   padding-top: 5px;
   margin-top: 18px;
   margin-left: 15px;
+}
+
+.todolist .todolist-list .todolist-items .todolist-item--checked {
+  display: flex;
+  width: 97.5%;
+  height: 48px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 2px 15px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 15px;
+  opacity: 0.5;
 }

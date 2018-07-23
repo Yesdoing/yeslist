@@ -144,3 +144,7 @@
   font-size: 15px;
   opacity: 0.5;
 }
+
+.todolist .todolist-list .todolist-items .todolist-item--checked span {
+  text-decoration: line-through;
+}

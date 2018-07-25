@@ -111,3 +111,20 @@
 .tasklist__contents .tasklist-additem a i {
   margin-right: 13px;
 }
+
+@media screen and (max-width: 768px) {
+  .tasklist {
+    width: 36px;
+  }
+  .tasklist .tasklist__contents {
+    display: none;
+  }
+
+  .tasklist__contents .tasklist__user .user-info img {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}

@@ -86,7 +86,7 @@
   background-color: #e1eefa;
 }
 
-.tasklist-content .tasklist-items .tasklist-item .item-name i {
+.tasklist-content .tasklist-items .tasklist-item .tasklist-item-info i {
   padding-right: 6px;
   color: #328fe9;
 }
@@ -114,9 +114,27 @@
 
 @media screen and (max-width: 768px) {
   .tasklist {
-    width: 36px;
+    width: 42px;
+    display: flex;
+    flex-direction: column;
   }
-  .tasklist .tasklist__contents {
+
+  .tasklist .tasklist__contents .tasklist__user .user-info img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .tasklist .tasklist__contents .tasklist__user .user-info span,
+  .tasklist .tasklist__header .search-bar,
+  .tasklist .tasklist__contents .tasklist__user .user-notifications,
+  .tasklist
+    .tasklist__contents
+    .tasklist-content
+    .tasklist-items
+    .tasklist-item
+    span,
+  .tasklist .tasklist__contents .tasklist-additem {
     display: none;
   }
 }

@@ -148,3 +148,13 @@
 .todolist .todolist-list .todolist-items .todolist-item--checked span {
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 768px) {
+  .todolist .todolist-additem {
+    width: 92%;
+  }
+
+  .todolist .todolist-list .todolist-items .todolist-item {
+    width: 92%;
+  }
+}
